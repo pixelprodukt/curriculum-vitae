@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Raleway';
+        font-style: thin;
+        font-weight: 100;
+        font-display: swap;
+        src: url(./assets/Raleway/static/Raleway-Thin.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Raleway';
+        font-style: light;
+        font-weight: 200;
+        font-display: swap;
+        src: url(./assets/Raleway/static/Raleway-Light.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(./assets/Raleway/static/Raleway-Regular.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Raleway';
+        font-style: medium;
+        font-weight: 500;
+        font-display: swap;
+        src: url(./assets/Raleway/static/Raleway-Medium.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Raleway';
+        font-style: bold;
+        font-weight: 700;
+        font-display: swap;
+        src: url(./assets/Raleway/static/Raleway-Bold.ttf) format('truetype');
+    }
+
+}
