@@ -7,7 +7,7 @@ import { SkillTagData } from './data/skill-tag-data';
 import { SkillLevel } from './models/skill-level';
 import { SkillTag } from './models/skill-tag';
 import profileImg from './assets/iceland_black_beach.jpg';
-import useGetAllFrameworkIcons from './hooks/use-get-all-framework-icons';
+import yellowSunsetImage from './assets/red_sunset.svg';
 
 /* const frameworkIcons = import.meta.glob('./assets/framework-icons/*.svg');
 console.log('frameworkIcons', frameworkIcons); */
@@ -28,13 +28,16 @@ const App = () => {
             <div className='w-full'>
                 <div className="container mx-auto px-4">
 
-                    <div className='p-8'></div>
+                    {/* <img src={yellowSunsetImage} className='rounded-md w-full' alt="" /> */}
+                    <div className='header-image'></div>
+                    <div className='mb-16'></div>
+
 
                     <h2 className='text-slate-600 text-3xl mb-2'>Curriculum Vitae</h2>
-                    <h1 className='text-slate-600 text-6xl font-light'>ADRIAN SEMMLER</h1>
-                    <hr className='border-slate-600 border' />
+                    <h1 className='text-custom-red text-6xl font-light'>ADRIAN SEMMLER</h1>
+                    {/* <hr className='border-slate-600 border' /> */}
 
-                    <div className='mb-24'></div>
+                    <div className='mb-12'></div>
 
                     <div className='flex flex-row'>
                         <div className='basis-1/5 mr-2'>
