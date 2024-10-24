@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-    @font-face {
+    /* @font-face {
         font-family: 'Raleway';
         font-style: thin;
         font-weight: 100;
@@ -41,6 +41,12 @@
         font-weight: 700;
         font-display: swap;
         src: url(./assets/Raleway/static/Raleway-Bold.ttf) format('truetype');
+    } */
+
+    @font-face {
+        font-family: 'Geist';
+        font-display: swap;
+        src: url(./assets/Geist/Geist-wght.ttf) format('truetype');
     }
 
 }

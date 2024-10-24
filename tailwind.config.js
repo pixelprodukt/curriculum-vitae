@@ -16,7 +16,7 @@ export default {
             }
         },
         fontFamily: {
-            sans: ['Raleway']
+            sans: ['Geist']
         },
     },
     plugins: [],

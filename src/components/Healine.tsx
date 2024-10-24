@@ -7,7 +7,7 @@ interface HeadlineProps {
 const Headline = ({ content }: PropsWithChildren<HeadlineProps>) => {
     return (
         <>
-            <h3 className='text-3xl font-bold text-sky-500 mb-2'>{content}</h3>
+            <h3 className='text-2xl font-bold text-slate-600 mb-2'>{content}</h3>
             <div className='mb-8'></div>
         </>
     );

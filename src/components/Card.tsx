@@ -7,7 +7,7 @@ interface CardProps {
 
 const Card = ({ headline, children }: PropsWithChildren<CardProps>) => {
     return (
-        <div className="bg-white border-sky-500 rounded-md shadow-md borderzt w-full p-5">
+        <div className="bg-white border-slate-300 rounded-md border w-full p-5">
             {headlineIsPresent(headline)}
             {children}
         </div>

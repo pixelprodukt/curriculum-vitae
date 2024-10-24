@@ -25,14 +25,14 @@ const App = () => {
 
     return (
         <>
-            <div className='w-full h-screen bg-slate-200'>
+            <div className='w-full'>
                 <div className="container mx-auto px-4">
 
                     <div className='p-8'></div>
 
-                    <h2 className='text-gray-600 text-3xl mb-2'>Curriculum Vitae</h2>
-                    <h1 className='text-amber-500 text-6xl font-light'>ADRIAN SEMMLER</h1>
-                    <hr className='border-amber-500 border' />
+                    <h2 className='text-slate-600 text-3xl mb-2'>Curriculum Vitae</h2>
+                    <h1 className='text-slate-600 text-6xl font-light'>ADRIAN SEMMLER</h1>
+                    <hr className='border-slate-600 border' />
 
                     <div className='mb-24'></div>
 
@@ -40,7 +40,7 @@ const App = () => {
                         <div className='basis-1/5 mr-2'>
                             <img src={profileImg} className='rounded-md' />
                         </div>
-                        <div className='basis-4/5 text-gray-600 text-lg ml-2'>
+                        <div className='basis-4/5 text-slate-600 text-lg ml-2'>
                             <p className='mb-4'>
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                                 labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
