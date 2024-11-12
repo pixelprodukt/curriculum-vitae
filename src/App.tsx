@@ -28,9 +28,14 @@ const App = () => {
             <div className='w-full'>
                 <div className="container mx-auto px-4">
 
-                    {/* <img src={yellowSunsetImage} className='rounded-md w-full' alt="" /> */}
-                    <div className='header-image'></div>
-                    <div className='mb-16'></div>
+                    <div className='mt-24'></div>
+
+                    <div className='w-full flex flex-row justify-center'>
+                        <div className='red-sun'></div>
+                    </div>
+
+                    {/* <div className='header-image'></div> */}
+                    <div className='mb-24'></div>
 
 
                     <h2 className='text-slate-600 text-3xl mb-2'>Curriculum Vitae</h2>
@@ -80,13 +85,13 @@ const App = () => {
 
                     <div className='p-6'></div>
 
-                    {/* <div className='flex flex-row'>
+                    <div className='flex flex-row'>
                         {skillTagData.map(tag => {
                             return (
                                 <div className={getTagClasses(tag)} key={tag.name}>{tag.name}</div>
                             );
                         })}
-                    </div> */}
+                    </div>
 
                     <div className='flex flex-row'>
                         {frameworkIcons.map((icon, index) => {

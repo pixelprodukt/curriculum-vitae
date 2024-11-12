@@ -52,10 +52,55 @@
 }
 
 .header-image {
-    width: 100%;
-    height: 400px;
-    background-image: url(./assets/red_sunset.svg);
-    background-position: 0px -150px;
+    width: 300px;
+    height: 300px;
+    background-image: url(./assets/red_sun_transparent.svg);
+    /* background-position: 0px 0px; */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+}
+
+/* https://codepen.io/hirokbanik/pen/pozYZgP */
+.red-sun {
+	width: 200px;
+	height: 200px;
+	background-color: #f2575c;
+	border-radius: 50%;
+	box-shadow:
+		0 0 0 20px #f2575c80,
+		0 0 0 40px #f2575c41,
+		0 0 0 60px #f2575c1c,
+		0 0 0 80px #f2575c10,
+		0 0 0 100px #f2575c04,
+		0 0 40px 100px #f2575c10;
+	animation:
+		sunrise 2s infinite linear forwards,
+		rays 2s 2s infinite linear;
+}
+
+@keyframes sunrise {
+	0% {
+		box-shadow: none;
+	}
+}
+
+@keyframes rays {
+	0% {
+		box-shadow: 
+		0 0 0 0 #f2575c80,
+		0 0 0 20px #f2575c80,
+		0 0 0 40px #f2575c41,
+		0 0 0 60px #f2575c1c,
+		0 0 0 80px #f2575c10,
+		0 0 40px 100px #f2575c10;
+	}
+	100% {
+		box-shadow: 
+		0 0 0 20px #f2575c80,
+		0 0 0 40px #f2575c41,
+		0 0 0 60px #f2575c1c,
+		0 0 0 80px #f2575c10,
+		0 0 0 100px #f2575c04,
+		0 0 40px 100px #f2575c10;
+	}
 }
