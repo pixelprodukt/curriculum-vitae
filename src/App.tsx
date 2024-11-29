@@ -7,18 +7,9 @@ import { SkillTagData } from './data/skill-tag-data';
 import { SkillLevel } from './models/skill-level';
 import { SkillTag } from './models/skill-tag';
 import profileImg from './assets/iceland_black_beach.jpg';
-import yellowSunsetImage from './assets/red_sunset.svg';
-
-/* const frameworkIcons = import.meta.glob('./assets/framework-icons/*.svg');
-console.log('frameworkIcons', frameworkIcons); */
-/* const resolvedIcons: string[] = [];
-for (const icon in frameworkIcons) {
-    frameworkIcons[icon]().then((icn: string) => resolvedIcons.push(icn)));
-} */
+import Headline from './components/Healine';
 
 const App = () => {
-    const frameworkIcons = Object.values(import.meta.glob('./assets/framework-icons/*.{png,jpg,jpeg,PNG,JPEG,svg}', { eager: true, as: 'url' }));
-    console.log('test', frameworkIcons);
     const careerPathData = CareerPathData;
     const educationData = EducationData;
     const skillTagData = SkillTagData;
@@ -30,80 +21,52 @@ const App = () => {
 
                     <div className='mt-24'></div>
 
-                    <div className='w-full flex flex-row justify-center'>
-                        <div className='red-sun'></div>
+                    <div className='w-full'>
+                        <div className='ml-auto mr-auto red-sun'></div>
                     </div>
 
-                    {/* <div className='header-image'></div> */}
                     <div className='mb-24'></div>
-
 
                     <h2 className='text-slate-600 text-3xl mb-2'>Curriculum Vitae</h2>
                     <h1 className='text-custom-red text-6xl font-light'>ADRIAN SEMMLER</h1>
-                    {/* <hr className='border-slate-600 border' /> */}
 
                     <div className='mb-12'></div>
 
-                    <div className='flex flex-row'>
-                        <div className='basis-1/5 mr-2'>
-                            <img src={profileImg} className='rounded-md' />
-                        </div>
-                        <div className='basis-4/5 text-slate-600 text-lg ml-2'>
-                            <p className='mb-4'>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                            </p>
-                            <p className='mb-4'>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                            </p>
-                        </div>
-                    </div>
+                    <p className='text-slate-600 text-lg mb-4'>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                    <p className='text-slate-600 text-lg mb-4'>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
 
                     <div className='mb-8'></div>
 
-                    <div className='flex flex-row'>
-                        <div className='basis-1/2 mr-2'>
-                            <Card headline={'Werdegang'}>
-                                <CurriculumVitaeInfo data={careerPathData} />
-                            </Card>
-                        </div>
-                        <div className='basis-1/2 ml-2'>
-                            <Card headline={'Aus- und Weiterbildung'}>
-                                <CurriculumVitaeInfo data={educationData} />
-                            </Card>
-                        </div>
-                    </div>
+                    <Card headline={'Werdegang'}>
+                        <CurriculumVitaeInfo data={careerPathData} />
+                    </Card>
+
+                    <Card headline={'Aus- und Weiterbildung'}>
+                        <CurriculumVitaeInfo data={educationData} />
+                    </Card>
 
                     <div className='p-6'></div>
 
-                    <div className='flex flex-row'>
-                        {skillTagData.map(tag => {
-                            return (
-                                <div className={getTagClasses(tag)} key={tag.name}>{tag.name}</div>
-                            );
-                        })}
-                    </div>
-
-                    <div className='flex flex-row'>
-                        {frameworkIcons.map((icon, index) => {
-                            return (
-                                <>
-                                    <div className='w-25'>
-                                        <img src={icon} key={index} className='w-28 mr-3' />
-                                    </div>
-                                </>
-                            );
-                        })}
-                    </div>
+                    <Headline content='Angewandte Technologien / Know-how' />
+                    {skillTagData.map(tag => {
+                        return (
+                            <div className={getTagClasses(tag)} key={tag.name}>{tag.name}</div>
+                        );
+                    })}
 
                 </div>
 
@@ -115,14 +78,21 @@ const App = () => {
 function getTagClasses(tag: SkillTag) {
     let bgColorClass = '';
 
-    if (tag.level === SkillLevel.VERY_GOOD) {
-        bgColorClass = 'bg-green-700';
-    } else if (tag.level === SkillLevel.GOOD) {
-        bgColorClass = 'bg-lime-500';
-    } else if (tag.level === SkillLevel.MEDIOCRE) {
-        bgColorClass = 'bg-orange-500';
-    } else if (tag.level === SkillLevel.READ_ABOUT_IT) {
-        bgColorClass = 'bg-amber-400';
+    switch (tag.level) {
+        case SkillLevel.VERY_GOOD:
+            bgColorClass = 'bg-green-700';
+            break;
+        case SkillLevel.GOOD:
+            bgColorClass = 'bg-lime-500';
+            break;
+        case SkillLevel.MEDIOCRE:
+            bgColorClass = 'bg-orange-500';
+            break;
+        case SkillLevel.READ_ABOUT_IT:
+            bgColorClass = 'bg-amber-400';
+            break;
+        default:
+            bgColorClass = 'bg-red-700';
     }
 
     return `${bgColorClass} text-white font-bold rounded-2xl p-2 mr-1`;

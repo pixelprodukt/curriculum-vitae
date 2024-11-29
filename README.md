@@ -1,11 +1,21 @@
-# React + TypeScript + Vite
+# Run locally
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Prerequesites
+* [node.js](https://nodejs.org/en/) v23.1.0 or newer
+* npm (comes with node.js) 10.9.0
 
-Currently, two official plugins are available:
+### Run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+As every webapp project nowadays, run
+```
+npm install
+```
+and afterwards
+```
+npm run dev
+```
+to start the dev server and serve the site at http://localhost:5173/ per default.
+
 
 ## Expanding the ESLint configuration
 
