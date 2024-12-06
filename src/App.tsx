@@ -8,6 +8,7 @@ import { SkillLevel } from './models/skill-level';
 import { SkillTag } from './models/skill-tag';
 import profileImg from './assets/iceland_black_beach.jpg';
 import Headline from './components/Healine';
+import GithubLink from './components/GithubLink';
 
 const App = () => {
     const careerPathData = CareerPathData;
@@ -51,22 +52,32 @@ const App = () => {
 
                     <div className='mb-8'></div>
 
-                    <Card headline={'Werdegang'}>
-                        <CurriculumVitaeInfo data={careerPathData} />
-                    </Card>
+                    <div className='columns-2 columns-lg'>
+                        <Card headline={'Werdegang'}>
+                            <CurriculumVitaeInfo data={careerPathData} />
+                        </Card>
 
-                    <Card headline={'Aus- und Weiterbildung'}>
-                        <CurriculumVitaeInfo data={educationData} />
-                    </Card>
+                        <Card headline={'Aus- und Weiterbildung'}>
+                            <CurriculumVitaeInfo data={educationData} />
+                        </Card>
+                    </div>
 
                     <div className='p-6'></div>
 
                     <Headline content='Angewandte Technologien / Know-how' />
-                    {skillTagData.map(tag => {
-                        return (
-                            <div className={getTagClasses(tag)} key={tag.name}>{tag.name}</div>
-                        );
-                    })}
+                    <div className='flex flex-wrap'>
+                        {skillTagData.map(tag => {
+                            return (
+                                <div className={`${getTagClasses(tag)} mb-2`} key={tag.name}>{tag.name}</div>
+                            );
+                        })}
+                    </div>
+
+                    <div className='p-6'></div>
+                    
+                    <GithubLink />
+                    
+                    <div className='p-6'></div>
 
                 </div>
 
