@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import Card from './Card';
+import githubLogo from '../assets/github_logo.svg';
 
 interface GithubLinkProps { }
 
 const GithubLink = (props: GithubLinkProps) => {
 
-    const [profileData, setProfileData] = useState(null);
+    const [profileData, setProfileData]: [any, any] = useState({});
 
     const fetchData = async () => {
         try {
@@ -26,9 +28,11 @@ const GithubLink = (props: GithubLinkProps) => {
     useEffect(() => { fetchData(); }, []);
 
     return (
-        <>
-            <div>Here comes the github profile</div>
-        </>
+        <Card>
+            <a className='flex flex-wrap items-center font-semibold' href={profileData.html_url} target='_blank'>
+                <img src={githubLogo} className='w-8 mr-2' /><div>Visit my GitHub profile</div>
+            </a>
+        </Card>
     );
 }
 

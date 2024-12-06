@@ -11,39 +11,79 @@ export const SkillTagData: SkillTag[] = [
         level: SkillLevel.VERY_GOOD
     },
     {
-        name: 'React',
-        level: SkillLevel.GOOD
+        name: 'HTML',
+        level: SkillLevel.VERY_GOOD
     },
     {
-        name: 'Java',
-        level: SkillLevel.MEDIOCRE
+        name: 'CSS',
+        level: SkillLevel.VERY_GOOD
     },
     {
-        name: 'SpringBoot',
-        level: SkillLevel.MEDIOCRE
+        name: 'PrimeNG',
+        level: SkillLevel.VERY_GOOD
     },
     {
         name: 'Bootstrap',
         level: SkillLevel.VERY_GOOD
     },
     {
-        name: 'tailwind',
+        name: 'React',
+        level: SkillLevel.GOOD
+    },
+    {
+        name: 'Java',
+        level: SkillLevel.GOOD
+    },
+    {
+        name: 'SpringBoot',
+        level: SkillLevel.GOOD
+    },
+    {
+        name: 'NestJS',
+        level: SkillLevel.GOOD
+    },
+    {
+        name: 'Postgres',
+        level: SkillLevel.GOOD
+    },
+    {
+        name: 'Open API',
+        level: SkillLevel.GOOD
+    },
+    {
+        name: 'Tailwind',
+        level: SkillLevel.GOOD
+    },
+    {
+        name: 'GraphQL',
+        level: SkillLevel.GOOD
+    },
+    {
+        name: 'Kotlin',
         level: SkillLevel.MEDIOCRE
     },
     {
-        name: 'PrimeNG',
-        level: SkillLevel.GOOD
-    },
-    {
         name: 'NodeJS',
-        level: SkillLevel.GOOD
+        level: SkillLevel.MEDIOCRE
     },
     {
-        name: 'nest.js',
-        level: SkillLevel.GOOD
+        name: 'C++',
+        level: SkillLevel.MEDIOCRE
     },
     {
-        name: 'test',
-        level: SkillLevel.READ_ABOUT_IT
+        name: 'Python',
+        level: SkillLevel.MEDIOCRE
+    },
+    {
+        name: 'Docker',
+        level: SkillLevel.MEDIOCRE
+    },
+    {
+        name: 'Gitlab',
+        level: SkillLevel.MEDIOCRE
+    },
+    {
+        name: 'Jira',
+        level: SkillLevel.MEDIOCRE
     }
 ];

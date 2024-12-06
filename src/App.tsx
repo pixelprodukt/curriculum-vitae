@@ -6,7 +6,6 @@ import { EducationData } from './data/education-data';
 import { SkillTagData } from './data/skill-tag-data';
 import { SkillLevel } from './models/skill-level';
 import { SkillTag } from './models/skill-tag';
-import profileImg from './assets/iceland_black_beach.jpg';
 import Headline from './components/Healine';
 import GithubLink from './components/GithubLink';
 
@@ -34,20 +33,7 @@ const App = () => {
                     <div className='mb-12'></div>
 
                     <p className='text-slate-600 text-lg mb-4'>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </p>
-                    <p className='text-slate-600 text-lg mb-4'>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        ...
                     </p>
 
                     <div className='mb-8'></div>
@@ -74,9 +60,11 @@ const App = () => {
                     </div>
 
                     <div className='p-6'></div>
-                    
-                    <GithubLink />
-                    
+
+                    <div className='columns-4 columns-md'>
+                        <GithubLink />
+                    </div>
+
                     <div className='p-6'></div>
 
                 </div>
