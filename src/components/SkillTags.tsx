@@ -22,16 +22,16 @@ function getTagClasses(tag: SkillTag) {
 
     switch (tag.level) {
         case SkillLevel.VERY_GOOD:
-            bgColorClass = 'bg-green-700';
+            bgColorClass = 'bg-custom-dark-green'
             break;
         case SkillLevel.GOOD:
-            bgColorClass = 'bg-lime-500';
+            bgColorClass = 'bg-custom-light-green';
             break;
         case SkillLevel.MEDIOCRE:
-            bgColorClass = 'bg-orange-500';
+            bgColorClass = 'bg-custom-dark-orange';
             break;
         case SkillLevel.READ_ABOUT_IT:
-            bgColorClass = 'bg-amber-400';
+            bgColorClass = 'bg-custom-light-orange';
             break;
         default:
             bgColorClass = 'bg-red-700';

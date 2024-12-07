@@ -34,14 +34,14 @@ const App = () => {
                     <p className='text-slate-600 text-xl leading-8 mb-4'>
                         Ich würde mich gerne näher bei Ihnen vorstellen: Ich 
                         bin 40 Jahre alt, in Berlin geboren und lebe auch dort. Ich habe mich bereits in der Jugend für das Programmieren 
-                        interessiert, da ich gerne Computerspiele entwickeln wollte. Manchmal kommt es jedoch 1. anders und 2. als man denkt 
+                        interessiert, da ich gerne Computerspiele entwickeln wollte. Doch erstens kommt es anders und zweitens als man denkt 
                         und ich habe eine Ausbildung als Grafiker im Bereich Printmedien absolviert.
                     </p>
                     <p className='text-slate-600 text-xl leading-8 mb-4'>
                         Dennoch tauchte das Thema Programmieren immer wieder mal auf und ich beschloss irgendwann, meinen beruflichen Fokus mehr 
-                        auf Webseitengestaltung und später dann auch -programmierung zu legen. Ich lernte in einem Kurs HTML, CSS und JavaScript, 
-                        beschäftigte mich in meiner Freizeit mit kleinen Projekten und hatte einen Kumpel, der als gelernter Anwendungsentwickler 
-                        eine Art Mentor-Rolle übernahm und von dem ich viel lernen konnte.
+                        auf Webseitengestaltung und später dann auch -programmierung zu legen. Ich habe mir einen Kurs gesucht um HTML, CSS und 
+                        JavaScript zu lernen und beschäftigte mich in meiner Freizeit mit kleinen Projekten. Schließlich fand ich einen Job in der IT
+                        und bin seitdem mit Feuer und Flamme dabei.
 
                     </p>
                     <p className='text-slate-600 text-xl leading-8 mb-4'>
@@ -52,7 +52,8 @@ const App = () => {
                         Prototypen.
                         <br />
                         <br />
-                        Vielen Dank für Ihre Zeit
+                        Ich hoffe ich konnte Ihnen einen kleinen, ersten Einblick zu meiner Person geben.<br />
+                        Vielen Dank für Ihre Zeit und beste Grüße.
                     </p>
 
                     <div className='mb-8'></div>
