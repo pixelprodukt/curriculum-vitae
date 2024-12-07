@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import Card from './Card';
 import githubLogo from '../assets/github_logo.svg';
 
-interface GithubLinkProps { }
-
-const GithubLink = (props: GithubLinkProps) => {
+const GithubLink = () => {
 
     const [profileData, setProfileData]: [any, any] = useState({});
 
@@ -17,7 +15,6 @@ const GithubLink = (props: GithubLinkProps) => {
             }
 
             const result = await response.json();
-            console.log('result: ', result);
             setProfileData(result);
         }
         catch (error: any) {
@@ -34,6 +31,6 @@ const GithubLink = (props: GithubLinkProps) => {
             </a>
         </Card>
     );
-}
+};
 
 export default GithubLink;

@@ -1,11 +1,10 @@
-import { PropsWithChildren } from 'react';
 import { CareerAndEducation } from '../models/career-and-education';
 
 interface CurriculumVitaeInfoProps {
     data: CareerAndEducation[];
 }
 
-const CurriculumVitaeInfo = ({ data }: PropsWithChildren<CurriculumVitaeInfoProps>) => {
+const CurriculumVitaeInfo = ({ data }: CurriculumVitaeInfoProps) => {
     return (
         <>
             {data.map((item, index) => {

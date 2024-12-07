@@ -4,10 +4,9 @@ import CurriculumVitaeInfo from './components/CurriculumVitaeInfo';
 import { CareerPathData } from './data/career-path-data';
 import { EducationData } from './data/education-data';
 import { SkillTagData } from './data/skill-tag-data';
-import { SkillLevel } from './models/skill-level';
-import { SkillTag } from './models/skill-tag';
 import Headline from './components/Healine';
 import GithubLink from './components/GithubLink';
+import SkillTags from './components/SkillTags';
 
 const App = () => {
     const careerPathData = CareerPathData;
@@ -32,8 +31,28 @@ const App = () => {
 
                     <div className='mb-12'></div>
 
-                    <p className='text-slate-600 text-lg mb-4'>
-                        ...
+                    <p className='text-slate-600 text-xl leading-8 mb-4'>
+                        Ich würde mich gerne näher bei Ihnen vorstellen: Ich 
+                        bin 40 Jahre alt, in Berlin geboren und lebe auch dort. Ich habe mich bereits in der Jugend für das Programmieren 
+                        interessiert, da ich gerne Computerspiele entwickeln wollte. Manchmal kommt es jedoch 1. anders und 2. als man denkt 
+                        und ich habe eine Ausbildung als Grafiker im Bereich Printmedien absolviert.
+                    </p>
+                    <p className='text-slate-600 text-xl leading-8 mb-4'>
+                        Dennoch tauchte das Thema Programmieren immer wieder mal auf und ich beschloss irgendwann, meinen beruflichen Fokus mehr 
+                        auf Webseitengestaltung und später dann auch -programmierung zu legen. Ich lernte in einem Kurs HTML, CSS und JavaScript, 
+                        beschäftigte mich in meiner Freizeit mit kleinen Projekten und hatte einen Kumpel, der als gelernter Anwendungsentwickler 
+                        eine Art Mentor-Rolle übernahm und von dem ich viel lernen konnte.
+
+                    </p>
+                    <p className='text-slate-600 text-xl leading-8 mb-4'>
+                        Aktuell bin ich jetzt seit ca. 6 Jahren als Softwareentwickler tätig und habe frontendseitig mit Angular und React gearbeitet,
+                        auf Backendseite mit Java/Springboot oder NestJS und versuche mich stets auch privat weiter zu bilden. Ich habe Spaß daran, besser
+                        in Kotlin als auch C++ zu werden, meine React-Kenntnisse wieder up-to-date zu bringen und mir neue Webframeworks anzuschauen. 
+                        Da der Wunsch, Computerspiele zu entwickeln, nie erloschen ist, beschäftige ich mich damit ebenso und bastele ab und zu einige kleinere
+                        Prototypen.
+                        <br />
+                        <br />
+                        Vielen Dank für Ihre Zeit
                     </p>
 
                     <div className='mb-8'></div>
@@ -51,13 +70,7 @@ const App = () => {
                     <div className='p-6'></div>
 
                     <Headline content='Angewandte Technologien / Know-how' />
-                    <div className='flex flex-wrap'>
-                        {skillTagData.map(tag => {
-                            return (
-                                <div className={`${getTagClasses(tag)} mb-2`} key={tag.name}>{tag.name}</div>
-                            );
-                        })}
-                    </div>
+                    <SkillTags data={skillTagData} />
 
                     <div className='p-6'></div>
 
@@ -73,28 +86,5 @@ const App = () => {
         </>
     )
 };
-
-function getTagClasses(tag: SkillTag) {
-    let bgColorClass = '';
-
-    switch (tag.level) {
-        case SkillLevel.VERY_GOOD:
-            bgColorClass = 'bg-green-700';
-            break;
-        case SkillLevel.GOOD:
-            bgColorClass = 'bg-lime-500';
-            break;
-        case SkillLevel.MEDIOCRE:
-            bgColorClass = 'bg-orange-500';
-            break;
-        case SkillLevel.READ_ABOUT_IT:
-            bgColorClass = 'bg-amber-400';
-            break;
-        default:
-            bgColorClass = 'bg-red-700';
-    }
-
-    return `${bgColorClass} text-white font-bold rounded-2xl p-2 mr-1`;
-}
 
 export default App;
